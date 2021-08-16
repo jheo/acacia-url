@@ -1,0 +1,17 @@
+### Check Url
+GET http://localhost:8080/urls/{{$uuid}}
+Accept: application/json
+
+### Create Random Url
+POST http://localhost:8080/urls
+Content-Type: application/json
+
+{
+  "url": "random",
+  "randomType": "hex",
+  "group": "_default",
+  "userId": null
+}
+
+### Create Random Url
+POST http://localhost:8080/test
